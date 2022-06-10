@@ -195,10 +195,12 @@ body {
    color: white;
    border: 2px solid teal;
    border-radius: 4px;
+   overflow: hidden;
 
    cursor: pointer;
 
-   transition: background-color 250ms ease-in-out;
+   transition: transform 250ms ease-in-out,
+      background-color 250ms ease-in-out, color 250ms ease-in-out 250ms;
 }
 
 .animation-btn:hover,
@@ -207,7 +209,6 @@ body {
    border: 2px solid crimson;
    color: yellow;
    display: flex;
-   overflow: hidden;
 }
 
 .icon-bird,
