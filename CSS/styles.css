@@ -47,7 +47,7 @@ body {
 }
 
 /* ----------Modal window---------- */
-/*.hero {
+.hero {
    padding-top: 100px;
    padding-bottom: 100px;
 
@@ -176,11 +176,10 @@ body {
    background-color: var(--accent-text-color);
    fill: yellow;
    border: 1px solid blue;
-}*/
+}
 
 /*---------Animation-------------*/
 .animation {
-   position: relative;
    padding-top: var(--typical-padding-ident);
    padding-bottom: var(--typical-padding-ident);
 }
@@ -190,6 +189,7 @@ body {
 }
 
 .animation-btn {
+   position: relative;
    padding: 10px 45px;
    background-color: lightseagreen;
    color: white;
@@ -203,32 +203,32 @@ body {
 
 .animation-btn:hover,
 .animation-btn:focus {
-   background-color: crimson;
-   border: 2px solid purple;
+   background-color: lightcoral;
+   border: 2px solid crimson;
    color: yellow;
-   display: block;
+   display: flex;
+   overflow: hidden;
 }
 
 .icon-bird,
 .icon-cat {
    position: absolute;
-   transition-property: transform 250ms ease-in-out;
 }
 
 .icon-bird {
-   top: 59%;
-   left: 35px;
+   top: 25%;
+   left: 20px;
 }
 
 .icon-cat {
-   top: 69%;
-   left: 35px;
+   top: 110%;
+   left: 20px;
 }
 
 .animation-btn:hover .icon-bird {
-   transform: translateY(calc(59% - 35px));
+   transform: translateY(calc(25% - 40px));
 }
 
 .animation-btn:hover .icon-cat {
-   transform: translateY(calc(69% - 35px));
+   transform: translateY(calc(110% - 55px));
 }
